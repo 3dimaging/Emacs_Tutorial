@@ -1,4 +1,4 @@
-#Here is the place to show the power of Emacs
+# Here is the place to show the power of Emacs
 
 Rule #1: Don't make Emacs too powerful at the begining. Don't drive an airplane when you can only drive a car.
 
