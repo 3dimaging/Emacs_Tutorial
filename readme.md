@@ -6,4 +6,12 @@ Rule #2: Don't use start up kit unless you know everything there. You can easily
 
 The best way to use Emacs is to make it usable and build up its functions later.
 
+## Emacs installation on MacOS
+
+  brew tap d12frosted/emacs-plus
+  
+  brew install emacs-plus
+
+  
+
 
