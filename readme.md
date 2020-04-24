@@ -1,3 +1,28 @@
+# Emacs is a powerful platform for text object manipulation using Lisp programming
+
+## What Emacs can do as an efficient text editor and IDE
+
+### Text editing by VIM (yes, VIM as a text editor is very efficient)
+
+### Text searching (grep)
+
+### Find files in a project
+
+### Code completion
+
+### Code navigation
+
+### Spell checking
+
+### Syntax checking
+
+### Find and replace cross several files
+
+### File management
+
+### Version control
+
+
 # Here is the place to show the power of Emacs
 
 Rule #1: Don't make Emacs too powerful at the begining. Don't drive an airplane when you can only drive a car.
@@ -88,5 +113,22 @@ https://cestlaz.github.io/stories/emacs/
   
 
 ## Build your own configuration file and setup your own workflow for using emacs
+
+### People got scared away from Emacs because of the complex key bindings. But you really don't need to remember them. 
+
+#### start everything by using M-x
+
+     Inside Emacs, your input is your text. Emacs execute lots of functions to modify your text. Every modification on your text is realized by a function. Emacs has about 8000 functions to do text editing. We have to admit it is very powerful. The only shortcoming for Emacs is that it is too powerful. People get eaisly lost in all these functions.
+
+#### query anything by M-x apropos
+
+    This command will pop up an blank region for you to input your search item. It will return the related information.
+    This is a must-have command for Emacs user.
+    
+#### Major mode and Minor mode
+
+  The hundreds of functions bundled together based on the programming languages or tasks are collectively called Major mode;
+  The functions bundled together based on more general editorial task like jumping around, searching, etc.
+  
 
 
