@@ -112,7 +112,12 @@ https://github.com/manateelazycat/lazycat-emacs
 ### Mike Zamansky
 
 https://cestlaz.github.io/stories/emacs/
-  
+
+### General Emacs sites
+
+https://emacs.zeef.com/ehartc
+
+http://tuhdo.github.io/
 
 ## Build your own configuration file and setup your own workflow for using emacs
 
@@ -136,6 +141,9 @@ https://cestlaz.github.io/stories/emacs/
 
   You can image that it is hard to find the right functions to do the right thing. Using Ctrl + h to get the information about the functions, variables, documentations.
   
+### Lisp programming (To learn Emacs, you need to learn Lisp language. But it is easy to learn)
+
+https://github.com/caiorss/Emacs-Elisp-Programming/blob/master/Elisp_Programming.org
 
   
 
