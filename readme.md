@@ -2,25 +2,27 @@
 
 ## What Emacs can do as an efficient text editor and IDE
 
-### Text editing by VIM (yes, VIM as a text editor is very efficient)
+* Text editing by VIM (yes, VIM as a text editor is very efficient)
 
-### Text searching (grep)
+* Text searching (grep)
 
-### Find files in a project
+* Find files in a project
 
-### Code completion
+* Code completion
 
-### Code navigation
+* Code navigation
 
-### Spell checking
+* Spell checking
 
-### Syntax checking
+* Syntax checking
 
-### Find and replace cross several files
+* Debugging
 
-### File management
+* Find and replace cross several files
 
-### Version control
+* File management
+
+* Version control
 
 
 # Here is the place to show the power of Emacs
@@ -129,6 +131,12 @@ https://cestlaz.github.io/stories/emacs/
 
   The hundreds of functions bundled together based on the programming languages or tasks are collectively called Major mode;
   The functions bundled together based on more general editorial task like jumping around, searching, etc.
+  
+#### Help yourself using Ctrl + h
+
+  You can image that it is hard to find the right functions to do the right thing. Using Ctrl + h to get the information about the functions, variables, documentations.
+  
+
   
 
 
