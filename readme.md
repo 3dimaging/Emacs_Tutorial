@@ -145,6 +145,95 @@ http://tuhdo.github.io/
 
 https://github.com/caiorss/Emacs-Elisp-Programming/blob/master/Elisp_Programming.org
 
+### Starts Here
+
+```elisp
+;;; Please add the following code in you .emacs.d/init.el file
+(require 'cl)
+(when (>= emacs-major-version 24)
+    (require 'package)
+    (package-initialize)
+    (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+    ;;(setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+    ;;			      ("melpa" . "http://elpa.emacs-china.org/melpa/")))
+    )
+
+
+
+ ;; Add Packages
+(defvar my/packages '(
+                company
+                hungry-delete
+                swiper
+                counsel
+                smartparens
+                js2-mode
+                nodejs-repl
+                exec-path-from-shell
+		popwin
+		reveal-in-osx-finder
+		web-mode
+		js2-refactor
+		expand-region
+		iedit
+		org-pomodoro
+		helm-ag
+		flycheck
+		auto-yasnippet
+		monokai-theme
+		evil
+		evil-leader
+		window-numbering
+		evil-surround
+		evil-nerd-commenter
+		which-key
+		powerline
+		powerline-evil
+		ivy
+		smartparens
+		pallet
+		;; my own packages
+		solarized-theme
+		helm
+		helm-gtags
+		ggtags
+		;;for python
+		ein
+		elpy
+		py-autopep8
+		websocket
+		request
+		dash
+		s
+		skewer-mode
+		request-deferred
+		smartrep
+		org
+		magit
+		;;for latex
+		auctex
+		auctex-latexmk
+		auctex-lua
+		company-auctex
+		cdlatex
+		latex-preview-pane
+               ) "Default packages")
+
+(setq package-selected-packages my/packages)
+
+(defun my/packages-installed-p ()
+    (loop for pkg in my/packages
+          when (not (package-installed-p pkg)) do (return nil)
+          finally (return t)))
+
+(unless (my/packages-installed-p)
+    (message "%s" "Refreshing package database...")
+    (package-refresh-contents)
+    (dolist (pkg my/packages)
+      (when (not (package-installed-p pkg))
+        (package-install pkg))))
+ ```
+
   
 
 
