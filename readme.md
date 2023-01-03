@@ -233,7 +233,50 @@ https://github.com/caiorss/Emacs-Elisp-Programming/blob/master/Elisp_Programming
       (when (not (package-installed-p pkg))
         (package-install pkg))))
  ```
+or start with a basic package installation script
 
-  
+```
+;; Set up package.el to work with MELPA
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/"))
+(package-initialize)
+(package-refresh-contents)
+
+(defvar my/packages '(
+                company
+                hungry-delete
+                swiper
+                counsel
+                smartparens
+                js2-mode))
+
+(defun my/packages-installed-p ()
+    (loop for pkg in my/packages
+          when (not (package-installed-p pkg)) do (return nil)
+          finally (return t)))
+
+(unless (my/packages-installed-p)
+    (message "%s" "Refreshing package database...")
+    (package-refresh-contents)
+    (dolist (pkg my/packages)
+      (when (not (package-installed-p pkg)) ;; package-installed-p is a function to check if a package or newer version of a package is installed.
+        (package-install pkg))))
+
+;; Enable Evil
+(require 'evil)
+(evil-mode 1)
+```
+### The basic organization of the emacs configuration folder
+#### init.el
+#### lisp folder
+##### packages.el
+##### ui.edl
+##### custom.el
+##### python.el
+
+### Setup a pretty UI
+
+### Great utilies
 
 
