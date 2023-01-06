@@ -267,6 +267,111 @@ or start with a basic package installation script
 (require 'evil)
 (evil-mode 1)
 ```
+### Packages installed
+Emacs packages:
+
+0. Package 
+Use-package
+
+1. Programming related
+1.0 general
+Company: text completion; complete anything
+Company-box
+Ivy: another text completion from abo-abo
+Auto-yasnippet
+Flycheck
+Fill-column-indicator
+highlight-symbol
+projectile
+
+1.1 javascript and web
+Js2-mode
+Nodes-Real
+Js2-refactor
+skewer-mode
+1.2 lisp
+lispy
+dash
+s
+1.3 python
+ein
+elpy
+elpygen
+py-autopep8
+request-deferred
+ob-ipython
+indent-tools
+pyimport
+
+1.4 latex
+auctex
+auctex-latexmk
+auctex-lua
+company-auctex
+cdlatex
+latex-preview-pane
+latex-pretty-symbols
+latex-unicode-math-mode
+
+1.5 org
+Org
+Org-pomodoro
+
+
+2. Text editing
+Hungry-delete: delete more space
+Smartparens: automatically insert pairs
+Expand-region: Expand region increases the selected region by semantic units
+iedit: edit multple occurrences
+Evil: vim simulator
+Evil-leader: set leader key
+Evil-surround:
+Evil-nerd-commenter: 
+Brow-kill-ring
+multiple-cursors
+smartrep
+3. Text search
+Swiper: 
+Helm
+Helm-ag
+occur
+
+4. Navigation
+4.1 window navigate
+Window-numbering
+popwin
+4.2 buffer navigate
+4.3 text navigate
+ggtags
+Helm-gtags
+avy
+4.4 command navigate
+Which-key
+
+5. UI
+Molokai-theme
+solarized-theme
+moe-theme
+Doom-theme
+Doom-modeline
+Powerline
+Powerline-evil
+All-the-icons
+All-the-icons-ivy
+Dashboard
+Beacon
+Nyan-mode
+neotree
+Ivy-posframe
+Awesome-tab
+
+6. Utilizes
+Exec-path-from-shell
+Reveal-in-osx-finder
+websocket
+request
+magit
+ztree
 ### The basic organization of the emacs configuration folder
 #### init.el
 #### lisp folder
