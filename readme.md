@@ -237,6 +237,7 @@ or start with a basic package installation script
 
 ```
 ;; Set up package.el to work with MELPA
+(require 'cl)
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
@@ -244,6 +245,7 @@ or start with a basic package installation script
 (package-refresh-contents)
 
 (defvar my/packages '(
+		evil
                 company
                 hungry-delete
                 swiper
